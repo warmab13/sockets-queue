@@ -10,7 +10,7 @@ const lblDesk4  = document.querySelector('#lblDesk4');
 const socket = io();
 
 socket.on('actual-status', ( payload ) => {
-    console.log("Payload actual-status", payload)
+    
     const audio = new Audio('./audio/new-ticket.mp3');
     audio.play();
 
